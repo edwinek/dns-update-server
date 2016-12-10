@@ -18,7 +18,7 @@ public class MongoConfig extends AbstractMongoConfiguration {
 
     @Override
     public Mongo mongo() throws Exception {
-        return new MongoClient();
+        return new MongoClient("dnsupdateserver");
     }
 
 }
