@@ -22,6 +22,8 @@
         <maven.plugin.war.version>2.6</maven.plugin.war.version>
         <mockito.version>1.9.5</mockito.version>
         <spring.mongo.version>1.8.4.RELEASE</spring.mongo.version>
+        <spring.security.version>4.2.1.RELEASE</spring.security.version>
+        <spring.security.oauth2.version>2.0.12.RELEASE</spring.security.oauth2.version>
         <spring.version>4.2.5.RELEASE</spring.version>
     </properties>
     <dependencies>
@@ -103,6 +105,26 @@
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>${logback.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security.oauth</groupId>
+            <artifactId>spring-security-oauth2</artifactId>
+            <version>${spring.security.oauth2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>${spring.security.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${spring.security.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>${spring.security.version}</version>
         </dependency>
     </dependencies>
     <build>

@@ -7,13 +7,17 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 @SuppressWarnings("unused")
 public class DnsUpdateServerInitialiser extends AbstractAnnotationConfigDispatcherServletInitializer {
 
-    protected Class<?>[] getRootConfigClasses() { return new Class<?>[]{RootConfig.class}; }
+    protected Class<?>[] getRootConfigClasses() {
+        return new Class<?>[]{RootConfig.class, WebSecurity.class};
+    }
 
     protected Class<?>[] getServletConfigClasses() {
         return new Class<?>[]{WebConfig.class};
     }
 
-    protected String[] getServletMappings() { return new String[]{"/"}; }
+    protected String[] getServletMappings() {
+        return new String[]{"/"};
+    }
 
     @Override
     protected DispatcherServlet createDispatcherServlet(WebApplicationContext servletAppContext) {
