@@ -22,8 +22,8 @@
         <maven.plugin.war.version>2.6</maven.plugin.war.version>
         <mockito.version>1.9.5</mockito.version>
         <spring.mongo.version>2.1.1.RELEASE</spring.mongo.version>
-        <spring.security.version>4.2.1.RELEASE</spring.security.version>
-        <spring.security.oauth2.version>2.0.12.RELEASE</spring.security.oauth2.version>
+        <spring.security.version>5.1.1.RELEASE</spring.security.version>
+        <spring.security.oauth2.version>2.3.4.RELEASE</spring.security.oauth2.version>
         <spring.version>5.1.1.RELEASE</spring.version>
     </properties>
     <dependencies>
